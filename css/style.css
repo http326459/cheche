@@ -33,12 +33,39 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
 #index .bot table,tr,th,td{border:1px solid #c5dfff;border-collapse:collapse;text-align: center;font-size: 10px;height:20px;}
 #index .bot table .one{width:27px;}
 #index .bot table .dianji,.dianji td{border:none;background:#c5dfff;position:relative;}
-#index .bot table .dianji a{width:40%;display:block;position:absolute;left:50%;top:125%;margin-left:-20%;}
+#index .bot table .dianji a{width:40%;display:block;position:absolute;left:50%;top:44%;margin-left:-20%;}
 #index .bot table .dianji a img{width:100%;}
 #index .bot span{position:absolute;left: 9%;bottom: 10%;display: block;color:#fe0006;font-weight: bold;font-size: 14px;width: 84%;line-height: 18px;}
 #index .bot span p{font-weight: normal;font-size: 12px;text-indent: 2em;}
 #index .bot .shopping{position: absolute;left:37%;bottom: 2%;}
 #index .bot .shopping img{width: 130px;height:30px;}
+
+/*掌厅页面*/
+.chexianhuodong{display:none;}
+#index2 .top{position: relative;}
+#index2 .top .share{position: absolute;right:3px;top:-2px;}
+#index2 .top .share a{color:#8b8a9e;font-size: 12px;}
+#index2 .top ul{position: absolute;top:41%;left:50%;width:80%;margin-left:-40%;background:url(../images/indexRed.png) no-repeat;height:35px;background-size:100% 100%;}
+#index2 .top .toptxt{position: absolute;top:56%;left:24%;width:55%;}
+#index2 .top .toptxt2{position: absolute;top:52%;left:24%;width:55%;}
+#index2 .top .toptxt2  p{font-size: 12px;color:#fffefe;line-height:22px;}
+#index2 .top .toptxt2  p i{color:#fe2c32;}
+#index2 .top .toptxt2  p a{color:#fe2c32;text-decoration:underline}
+#index2 .bot{position: relative;background:#c5dfff;min-height:550px;}
+#index2 .bot table{position: absolute;left:2.5%;top:2%;background-color: #4b96f3;color:#fff;width:95%;}
+#index2 .bot table,#index2 .bot table tr,#index2 .bot table th,#index2 .bot table td{border:1px solid #c5dfff;border-collapse:collapse;font-size:12px;height:50px;line-height:12px;word-wrap: break-word;word-break: break-all;}
+#index2 .bot table td{text-align:center;}
+#index2 .bot table .one{width:27px;}
+#index2 .bot table .dianji,.dianji td{border:none;background:#c5dfff;position:relative;}
+#index2 .bot table .dianji td{padding-top:20%;}
+#index2 .bot table .dianji a{width:40%;display:block;position:absolute;left:50%;top:65%;margin-left:-20%;!important}
+#index2 .bot table .dianji a img{width:100%;}
+
+#index2 .bot span{position:absolute;left: 9%;bottom:10%;display: block;color:#fe0006;font-weight: bold;font-size: 14px;width: 84%;line-height: 18px;}
+#index2 .bot span p{font-weight: normal;font-size: 12px;text-indent: 2em;}
+#index2 .bot .shopping{position: absolute;left:37%;bottom: 2%;}
+#index2 .bot .shopping img{width: 130px;height:30px;}
+
 
 /*车险活动css*/
 #rules .main{position: relative;/*background:url(../images/guizetop_01.jpg) no-repeat;background-size:100% 100%;min-height:360px;*/}
@@ -57,14 +84,14 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
 #rules .mid .mbt{position:absolute;left:50%;top:-6px;width:40%;margin-left:-20%;height:30px;}
 #rules .bot{position: relative;background:url(../images/ergai_02.jpg) no-repeat;background-size:100% 100%;min-height:300px;}
 #rules .bot .txtbot{width:87%;font-size: 14px;color:#ffffff;line-height:20px;margin:0 auto;padding-top:30px;padding-bottom:110px;}
-#rules .anjiu{width: 126px;position: absolute;left: 50%;top: 82%;margin-left: -63px;}
+#rules .anjiu{width: 126px;position: absolute;left: 50%;top: 80%;margin-left: -63px;}
 #rules .bot .mbt{position:absolute;left:50%;top:-5px;width:60%;margin-left:-30%;height:30px;}
 #rules .mbt img{height:100%;}
 #rules .bot .txtx{color:#3b77c2;font-size:16px;position:absolute;bottom:3%;right:6%;}
 /*车险礼包css*/
 #gift .mainb{padding-bottom:70px;position:relative;background:url(../images/wuyu_02.jpg) no-repeat;background-size:100% 100%;}
 #gift .mainb table{background-color: #4b96f3;color:#fff;width:95%;margin:0 auto;}
-#gift .mainb table,tr,th,td{border:1px solid #c5dfff;border-collapse:collapse;font-size:12px;height:50px;line-height:12px;word-wrap: break-word;word-break: break-all;}
+#gift .mainb table,tr,th,td{border:1px solid #c5dfff;border-collapse:collapse;font-size:12px;height:55px;line-height:12px;word-wrap: break-word;word-break: break-all;}
 #gift .mainb table .digit{width:35px;}
 #gift .mainb table .number{width:70px;}
 #gift .mainb table .figure{width:50px;}
