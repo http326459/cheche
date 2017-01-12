@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" />
+    <title>车险分享</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js" ></script>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		$(function(){
+   			var _dianji = $(".chexianhuodong .navd li a");
+   			_dianji.click(function(){
+   				$(".chexianhuodong").css("display","none");
+   				var num = $(this).parent().index();  
+   				$(this).parent().parent().parent().parent().parent().find(".chexianhuodong").eq(num).css("display","block"); 
+   				console.log(num); 
+   				if(num == 0){
+					$(".chexianhuodong .navd").css({"background":"url(images/indexRed.png) no-repeat","background-size":"100% 100%"});
+				}else if(num == 1){
+					
+					$(".chexianhuodong .navd").css({"background":"url(images/jinxiRed.png) no-repeat","background-size":"100% 100%"});
+					
+				}else if(num == 2){
+					$(".chexianhuodong .navd").css({"background":"url(images/guizhe.png) no-repeat","background-size":"100% 100%"});
+				};
+   			});
+   			var _xiangqing = $("#xiangqing");
+   			_xiangqing.click(function(){
+   				$(".mainc").css("display","block");
+   			});
+   			var _shouxiangqing = $("#shouxiang");
+   			_shouxiangqing.click(function(){
+   				$(".chexianhuodong").css("display","none");
+   				$(".content").find("#gift").css("display","block");
+   				$(".chexianhuodong .navd").css({"background":"url(images/jinxiRed.png) no-repeat","background-size":"100% 100%"});
+   			});
+   			$(".mainc").ready(function(){
+	   			$("#xiangqing").click(function(){
+	   				$(".mainb").css("padding-bottom","50px");
+	   				$(".zhao").css("bottom","3%");
+	  				$(".inmainc").css("display","block");
+	  			});
+	  		});
+   		});
+    </script>
+</head>
+<body>
+	<div class="content">			
+		<div class="chexianhuodong" id="index" style="display:block;">
+			<div class="top"><img src="images/qwweaar_01.jpg"/> 
+				<div class="toptxt2"><p>现在购买车险，即可连续<i>12</i>个月获赠流量月包，每月最高<i>3GB</i>！流量还可<i>全家共享</i>，以后爸爸再也不担心全家的流量啦!</p></div>
+			</div>
+			<div class="bot" style="min-height: 500px;">
+			<table>
+				<tr>
+					<th class="one">档次</th>
+					<th style="width: 92px;">商业保险费X(元)</th>
+					<th style="width: 70px;">每月所赠包月流量</th>
+					<th>赠送时间</th>
+					<th>赠送价值</th>
+				</tr>
+				<tr>
+					<td class="one">1</td>
+					<td>1500≤X<2000</td>
+					<td>70M</td>
+					<td>12个月</td>
+					<td>120元</td>
+				</tr>
+				<tr>
+					<td class="one">2</td>
+					<td>2000≤X<3000</td>
+					<td>150M</td>
+					<td>12个月</td>
+					<td>240元</td>
+				</tr>
+				<tr>
+					<td class="one">3</td>
+					<td>3000≤X<4000</td>
+					<td>500M</td>
+					<td>12个月</td>
+					<td>360元</td>
+				</tr>
+				<tr>
+					<td class="one">4</td>
+					<td>4000≤X<5000</td>
+					<td>700M</td>
+					<td>12个月</td>
+					<td>480元</td>
+				</tr>
+				<tr>
+					<td class="one">5</td>
+					<td>5000≤X<7000</td>
+					<td>1G</td>
+					<td>12个月</td>
+					<td>600元</td>
+				</tr>
+				<tr>
+					<td class="one">6</td>
+					<td>7000≤X<10000</td>
+					<td>2G</td>
+					<td>12个月</td>
+					<td>840元</td>
+				</tr>
+				<tr>
+					<th class="one">7</td>
+					<td>X≥10000</td>
+					<td>3G</td>
+					<td>12个月</td>
+					<td>1200元</td>
+				</tr>
+				<tr class="dianji">
+					<td colspan="5"><a href="http://d1.wxcitycq.com/" style="top:36%"><img src="images/hhh_03.jpg"/></a></td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		</body>
+</html>

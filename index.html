@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" />
+    <title>车险首页</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js" ></script>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		$(function(){
+   			var _dianji = $(".chexianhuodong .navd li a");
+   			_dianji.click(function(){
+   				$(".chexianhuodong").css("display","none");
+   				var num = $(this).parent().index();  
+   				$(this).parent().parent().parent().parent().parent().find(".chexianhuodong").eq(num).css("display","block"); 
+   				console.log(num); 
+   				if(num == 0){
+					$(".chexianhuodong .navd").css({"background":"url(images/indexRed.png) no-repeat","background-size":"100% 100%"});
+				}else if(num == 1){
+					
+					$(".chexianhuodong .navd").css({"background":"url(images/guize.png) no-repeat","background-size":"100% 100%"});
+					
+				};
+   			});
+   			var _xiangqing = $("#xiangqing");
+   			_xiangqing.click(function(){
+   				$(".mainc").css("display","block");
+   			});
+   			var _shouxiangqing = $("#shouxiang");
+   			_shouxiangqing.click(function(){
+   				$(".chexianhuodong").css("display","none");
+   				$(".content").find("#gift").css("display","block");
+   				$(".chexianhuodong .navd").css({"background":"url(images/jinxiRed.png) no-repeat","background-size":"100% 100%"});
+   			});
+   			$(".mainc").ready(function(){
+	   			$("#xiangqing").click(function(){
+	   				$(".mainb").css("padding-bottom","50px");
+	   				$(".zhao").css("bottom","3%");
+	  				$(".inmainc").css("display","block");
+	  			});
+	  		});
+   		});
+    </script>
+</head>
+<body>
+	<div class="content">			
+		<div class="chexianhuodong" id="index" style="display:block;">
+			<div class="top"><img src="images/car2_01.jpg"/> 
+				<div class="share"><a href="share.html">分享</a></div>
+				<ul class="navd clearfix">
+					<li>
+						<a href="javascript:;"></a>
+					</li>
+					<li>
+						<a href="javascript:;"></a>
+					</li>
+				</ul>
+				<div class="toptxt"><p>现在购买车险，即可连续<i>12</i>个月获赠流量月包，每月最高<i>3GB</i>！流量还可<i>全家共享</i>，以后爸爸再也不担心全家的流量啦!</p></div>
+			</div>
+			<div class="bot">
+			<table>
+				<tr>
+					<th class="one">档次</th>
+					<th style="width: 92px;">商业保险费X(元)</th>
+					<th style="width: 70px;">每月所赠包月流量</th>
+					<th>赠送时间</th>
+					<th>赠送价值</th>
+				</tr>
+				<tr>
+					<td class="one">1</td>
+					<td>1500≤X<2000</td>
+					<td>70M</td>
+					<td>12个月</td>
+					<td>120元</td>
+				</tr>
+				<tr>
+					<td class="one">2</td>
+					<td>2000≤X<3000</td>
+					<td>150M</td>
+					<td>12个月</td>
+					<td>240元</td>
+				</tr>
+				<tr>
+					<td class="one">3</td>
+					<td>3000≤X<4000</td>
+					<td>500M</td>
+					<td>12个月</td>
+					<td>360元</td>
+				</tr>
+				<tr>
+					<td class="one">4</td>
+					<td>4000≤X<5000</td>
+					<td>700M</td>
+					<td>12个月</td>
+					<td>480元</td>
+				</tr>
+				<tr>
+					<td class="one">5</td>
+					<td>5000≤X<7000</td>
+					<td>1G</td>
+					<td>12个月</td>
+					<td>600元</td>
+				</tr>
+				<tr>
+					<td class="one">6</td>
+					<td>7000≤X<10000</td>
+					<td>2G</td>
+					<td>12个月</td>
+					<td>840元</td>
+				</tr>
+				<tr>
+					<th class="one">7</td>
+					<td>X≥10000</td>
+					<td>3G</td>
+					<td>12个月</td>
+					<td>1200元</td>
+				</tr>
+				<tr class="dianji">
+					<td colspan="5"><a href="http://218.206.27.198:8093/chebaohui/index.html"><img src="images/shopping_03.jpg"/></a></td>
+				</tr>
+			</table>
+			<span>温馨提示：<br/><p> 进入重庆城首页，打开顶部“买车险 做流量土豪”广告参与活动！</p></span>
+			</div>
+		</div>
+		<div class="chexianhuodong" id="rules">
+			<div class="main"><img src="images/guizetopa_01.jpg"/> 
+				<div class="share"><a href="share.html">分享</a></div>
+				<ul class="navd">
+					<li>
+						<a href="javascript:;"></a>
+					</li>
+					<li>
+						<a href="javascript:;"></a>
+					</li>
+					<li>
+						<a href="javascript:;"></a>
+					</li>
+				</ul>
+				<div class="comtime">
+					<div class="time"><img src="images/timepic_03.jpg"/></div>
+					<div class="timetxt">即日起至2017年2月28日</div>
+				</div>
+			</div>
+			<div class="mid">
+				<div class="mbt"><img src="images/guizex.png"></div>
+				<div class="txtmid">
+					<p>1、本次活动购买车险所赠送的月包流量为重庆本地通用流量，并将以流量红包的方式赠送给用户。</p>
+					<p>2、流量红包将赠送至购买车险时预留的电话帐户，仅限重庆移动用户使用。</p>
+					<p>3、赠送的流量红包于保单正式生效（起保）后的次月开始发放，每月初前两个工作日内发放，连续赠送12个月。例如：用户购买的商业保险费在5000-7000元（不含7000元），每月赠送1G月包流量，连续赠送12个月，共计赠送12G。</p>
+					<p>4、流量领取路径：重庆移动掌上营业厅APP—我的—我的流量—流量红包—兑流量。</p>
+					<p>5、在退保之日起用户将不再获赠月包流量。</p>
+				</div>
+			</div>
+			<div class="bot">
+				<div class="mbt"><img src="images/haoduo.png"></div>
+				<div class="txtbot">
+					<p>1、本次活动所得流量红包，累计达到5MB后，可兑换或者赠送他人使用，流量红包仅能赠送给重庆移动用户。</p>
+					<p>2、流量红包赠送路径：重庆移动掌上营业厅APP—我的—我的流量—流量红包—送流量。</p>
+					<p>3、同一批次赠送给他人的红包，同一用户只能抢一次，且红包两天内没有领取，会自动回收。</p>
+					<p>4、红包赠送时，可选择拆分或平均拆分，最大拆分个数为50个，最小红包流量为1MB。</p>
+					<p>5、兑换红包时，红包流量将兑换为重庆本地通用流量，兑换后立即生效，流量有效期到当月月末。</p>
+				</div>
+					<div class="anjiu"><a href="http://wapbbs.wxcitycq.com/bbs_wap/front/post/com/init.action?topicId=e2d6bdec76574101ad11d6370f1deacf
+"><img src="images/money_03.png"/></a></div>
+				<div class="txtx">活动最终解释权归重庆城所有</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>

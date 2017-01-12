@@ -1,0 +1,74 @@
+/*公共样式*/
+body,div,i,a,p,span,b,input,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd,dt,textarea,img{margin:0;padding:0;}
+body{font-family: microsoft yahei;color:#333;}
+i,b{font-style: normal;}
+a{text-decoration:none;}
+img{vertical-align:top;width: 100%;}
+input,textarea,select,textarea,img{resize: none;outline: none;border: none;}
+li{list-style: none}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+.clearfix:after{content: '';display: block;height:0;clear: both;font-size:0;*zoom:1}
+
+/*车险首页css*/
+.chexianhuodong{display:none;}
+#index .top{position: relative;}
+#index .top .share{position: absolute;right:3px;top:-2px;}
+#index .top .share a{color:#8b8a9e;font-size: 12px;}
+#index .top ul{position: absolute;top:41%;left:50%;width:80%;margin-left:-40%;background:url(../images/indexRed.png) no-repeat;height:35px;background-size:100% 100%;}
+#index .top ul li{background-size: 100% 100%;width:40%;}
+#index .top ul li:nth-child(1){float:left;}
+#index .top ul li:nth-child(2){float:right;}
+#index .top ul li a{display: block;height:35px;}
+#index .top ul li img{height:100%;width: 100%;}
+#index .top .toptxt{position: absolute;top:56%;left:24%;width:55%;}
+#index .top .toptxt  p{font-size: 12px;color:#fffefe;line-height:22px;}
+#index .top .toptxt  p i{color:#fe2c32;}
+#index .top .toptxt  p a{color:#fe2c32;text-decoration:underline}
+#index .top .toptxt2{position: absolute;top:52%;left:24%;width:55%;}
+#index .top .toptxt2  p{font-size: 12px;color:#fffefe;line-height:22px;}
+#index .top .toptxt2  p i{color:#fe2c32;}
+#index .top .toptxt2  p a{color:#fe2c32;text-decoration:underline}
+#index .bot{position: relative;background:#c5dfff;min-height:550px;}
+#index .bot table{position: absolute;left:2.5%;top:2%;background-color: #4b96f3;color:#fff;width:95%;}
+#index .bot table,tr,th,td{border:1px solid #c5dfff;border-collapse:collapse;text-align: center;font-size: 10px;height:20px;}
+#index .bot table .one{width:27px;}
+#index .bot table .dianji,.dianji td{border:none;background:#c5dfff;position:relative;}
+#index .bot table .dianji a{width:40%;display:block;position:absolute;left:50%;top:125%;margin-left:-20%;}
+#index .bot table .dianji a img{width:100%;}
+#index .bot span{position:absolute;left: 9%;bottom: 10%;display: block;color:#fe0006;font-weight: bold;font-size: 14px;width: 84%;line-height: 18px;}
+#index .bot span p{font-weight: normal;font-size: 12px;text-indent: 2em;}
+#index .bot .shopping{position: absolute;left:37%;bottom: 2%;}
+#index .bot .shopping img{width: 130px;height:30px;}
+
+/*车险活动css*/
+#rules .main{position: relative;/*background:url(../images/guizetop_01.jpg) no-repeat;background-size:100% 100%;min-height:360px;*/}
+#rules .main .share{position: absolute;right:3px;top:-2px;}
+#rules .main .share a{color:#8b8a9e;font-size: 12px;}
+#rules .main ul{position: absolute;top:70%;background:url(../images/guize.png) no-repeat;background-size:100% 100%;left:50%;width:80%;margin-left:-40%;}
+#rules .main ul li{float:left;margin-left:4%;background-size:100% 100%;width: 28%;}
+#rules .main ul li a{display: block;height:35px;}
+#rules .main ul li img{height:100%;width:100%;}
+#rules .main .comtime{height:60px;position: absolute;left:10%;bottom: -10%;}
+#rules .main .comtime .time{float: left;}
+#rules .main .time img{height:22px;width: 75px;}
+#rules .main  .comtime .timetxt{color:#3b77c2;font-size: 16px;height:30px;line-height: 30px;float: right;padding-left: 5px;}
+#rules .mid{position: relative;background:url(../images/rulesmid_02.jpg) no-repeat;background-size:100% 100%;min-height:300px;}
+#rules .mid .txtmid{width:87%;font-size:14px;color:#ffffff;line-height:20px;margin:0 auto;padding-top:30px;padding-bottom:35px;}
+#rules .mid .mbt{position:absolute;left:50%;top:-6px;width:40%;margin-left:-20%;height:30px;}
+#rules .bot{position: relative;background:url(../images/ergai_02.jpg) no-repeat;background-size:100% 100%;min-height:300px;}
+#rules .bot .txtbot{width:87%;font-size: 14px;color:#ffffff;line-height:20px;margin:0 auto;padding-top:30px;padding-bottom:110px;}
+#rules .anjiu{width: 126px;position: absolute;left: 50%;top: 82%;margin-left: -63px;}
+#rules .bot .mbt{position:absolute;left:50%;top:-5px;width:60%;margin-left:-30%;height:30px;}
+#rules .mbt img{height:100%;}
+#rules .bot .txtx{color:#3b77c2;font-size:16px;position:absolute;bottom:3%;right:6%;}
+/*车险礼包css*/
+#gift .mainb{padding-bottom:70px;position:relative;background:url(../images/wuyu_02.jpg) no-repeat;background-size:100% 100%;}
+#gift .mainb table{background-color: #4b96f3;color:#fff;width:95%;margin:0 auto;}
+#gift .mainb table,tr,th,td{border:1px solid #c5dfff;border-collapse:collapse;font-size:12px;height:50px;line-height:12px;word-wrap: break-word;word-break: break-all;}
+#gift .mainb table .digit{width:35px;}
+#gift .mainb table .number{width:70px;}
+#gift .mainb table .figure{width:50px;}
+#gift .mainb table .good{width:105px;}
+#gift .mainb table .change{width: 100px;text-align: left;padding-left: 3px;}
+#gift .mainb .zhao{position: absolute;left:50%;bottom:7%;margin-left:-18%;width:36%;padding-bottom:4px;}
+#gift .mainb .zhao a{font-size: 14px;color:#c30c1e;text-decoration:underline}
